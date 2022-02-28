@@ -4,16 +4,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RicsStuffTest {
 
-  static private String NAME = "Riccardo";
-  private RicsStuf ricsStuf = new RicsStuf(NAME);
+  private final String NAME = "Riccardo";
+  private final RicsStuff ricsStuff = new RicsStuff(NAME);
 
   @Test
   void testGetters() {
-    assertEquals(NAME, ricsStuf.getName());
+    assertEquals(NAME, ricsStuff.getName());
   }
 
   @Test
   void testDoComplicatedStuff() {
-    assertEquals("Hello "+ NAME, ricsStuf.doComlicatedStuff());
+    assertEquals("Hello "+ NAME, ricsStuff.doComlicatedStuff());
   }
 }
