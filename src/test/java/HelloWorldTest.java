@@ -11,7 +11,7 @@ public class HelloWorldTest {
   }
 
   @ParameterizedTest
-  @CsvSource({"Hello Riccardo, Riccardo", "Hello Antonio, Antonio", "Hello Stranger, Stranger"})
+  @CsvSource({"Hello Ricardo, Riccardo", "Hello Antonio, Antonio", "Hello Stranger, Stranger"})
   void TestWithCSVParameters(String expected, String actual){
     assertEquals(expected, HelloWorld.hello(actual));
   }
