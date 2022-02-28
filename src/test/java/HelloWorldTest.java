@@ -10,11 +10,6 @@ public class HelloWorldTest {
     assertEquals("Hello", HelloWorld.hello());
   }
 
-  @Test
-  void TestHelloWithParameter() {
-    assertEquals("Hello Riccardo", HelloWorld.hello("Riccardo"));
-  }
-
   @ParameterizedTest
   @CsvSource({"Hello Riccardo, Riccardo", "Hello Antonio, Antonio", "Hello Stranger, Stranger"})
   void TestWithCSVParameters(String expected, String actual){
